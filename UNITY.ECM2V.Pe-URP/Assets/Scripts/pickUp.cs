@@ -22,6 +22,7 @@ public class pickUp : MonoBehaviour
     public GameObject selectedItem;
     public GameObject lastSelectedItem;
     public GameObject pickedUpItem;
+    public GameObject fire;
 
     public Transform environment;
 
@@ -41,6 +42,8 @@ public class pickUp : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         item = LayerMask.NameToLayer("item");
         campFire = LayerMask.NameToLayer("CampFire");
+        GameObject particleSystemObject = fire;
+        particleSystemObject.SetActive(false);
     }
 
 
@@ -128,7 +131,7 @@ public class pickUp : MonoBehaviour
                     canPlace = true;
                 }
 
-                if (Input.GetKey(KeyCode.E))
+                if (Input.GetKey(KeyCode.X))
                 {
                     // isLockedOn = !isLockedOn;
                     startFire();
@@ -238,18 +241,19 @@ public class pickUp : MonoBehaviour
                 }
             }
         }
-
         pickedUpItem = null;
         canPlace = false;
     }
 
     void startFire()
     {
-        Vector3 lockInPosition = fireBlueprint.position;
-        lockInPosition.z = transform.position.z;
+        /*  Vector3 lockInPosition = fireBlueprint.position;
+          lockInPosition.z = transform.position.z;
 
-        transform.position = Vector3.Lerp(transform.position, lockInPosition, followSpeed);
-        print("lockIn");
+          transform.position = Vector3.Lerp(transform.position, lockInPosition, followSpeed);
+          print("lockIn");*/
+        GameObject particleSystemObject = fire;
+        particleSystemObject.SetActive(true);
     }
 
 }
