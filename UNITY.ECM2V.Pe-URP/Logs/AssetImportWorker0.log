@@ -15,7 +15,7 @@ C:/Users/dumit/OneDrive/Desktop/Projects/ECM2V.Pe4-URP/UNITY.ECM2V.Pe-URP
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64569
+53594
 Successfully changed project path to: C:/Users/dumit/OneDrive/Desktop/Projects/ECM2V.Pe4-URP/UNITY.ECM2V.Pe-URP
 C:/Users/dumit/OneDrive/Desktop/Projects/ECM2V.Pe4-URP/UNITY.ECM2V.Pe-URP
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/dumit/OneDrive/Desktop/Projects/ECM2V.Pe4-URP/UNITY.ECM2V.Pe-URP
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [25140] Host "[IP] 172.26.112.1 [Port] 0 [Flags] 2 [Guid] 1489915775 [EditorId] 1489915775 [Version] 1048832 [Id] WindowsEditor(7,AMDumi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [33484] Host "[IP] 172.26.112.1 [Port] 0 [Flags] 2 [Guid] 425999177 [EditorId] 425999177 [Version] 1048832 [Id] WindowsEditor(7,AMDumi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [25140] Host "[IP] 172.26.112.1 [Port] 0 [Flags] 2 [Guid] 1489915775 [EditorId] 1489915775 [Version] 1048832 [Id] WindowsEditor(7,AMDumi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [33484] Host "[IP] 172.26.112.1 [Port] 0 [Flags] 2 [Guid] 425999177 [EditorId] 425999177 [Version] 1048832 [Id] WindowsEditor(7,AMDumi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 124.06 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 103.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.26f1 (a16dc32e0ff2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Resources/UnitySubsystems
@@ -67,75 +67,75 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56320
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56476
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010691 seconds.
+Registered in 0.008153 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 156.71 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 109.82 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.006 seconds
+- Completed reload, in  0.734 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1007ms)
-		BeginReloadAssembly (115ms)
+	ReloadAssembly (735ms)
+		BeginReloadAssembly (90ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (735ms)
-			LoadAssemblies (112ms)
+		EndReloadAssembly (532ms)
+			LoadAssemblies (87ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (151ms)
+			SetupTypeCache (127ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (461ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (319ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (157ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (219ms)
-				ProcessInitializeOnLoadMethodAttributes (71ms)
+				RefreshPlugins (110ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (153ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.013728 seconds.
+Registered in 0.010135 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 139.10 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 132.98 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.645 seconds
+- Completed reload, in  1.520 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1646ms)
-		BeginReloadAssembly (184ms)
+	ReloadAssembly (1521ms)
+		BeginReloadAssembly (168ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (1300ms)
-			LoadAssemblies (145ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (1218ms)
+			LoadAssemblies (131ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (373ms)
+			SetupTypeCache (334ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (78ms)
-			SetupLoadedEditorAssemblies (674ms)
+			RebuildScriptCaches (86ms)
+			SetupLoadedEditorAssemblies (641ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (139ms)
-				BeforeProcessingInitializeOnLoad (149ms)
-				ProcessInitializeOnLoadAttributes (266ms)
-				ProcessInitializeOnLoadMethodAttributes (101ms)
+				RefreshPlugins (133ms)
+				BeforeProcessingInitializeOnLoad (124ms)
+				ProcessInitializeOnLoadAttributes (270ms)
+				ProcessInitializeOnLoadMethodAttributes (95ms)
 				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -143,13 +143,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 1.31 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4724 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 28 unused Assets / (347.7 KB). Loaded Objects now: 5188.
-Memory consumption went from 190.7 MB to 190.4 MB.
-Total: 4.693500 ms (FindLiveObjects: 0.404900 ms CreateObjectMapping: 0.491800 ms MarkObjects: 3.632300 ms  DeleteObjects: 0.163100 ms)
+Memory consumption went from 190.8 MB to 190.5 MB.
+Total: 4.154500 ms (FindLiveObjects: 0.390300 ms CreateObjectMapping: 0.458100 ms MarkObjects: 3.106600 ms  DeleteObjects: 0.198300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -164,494 +164,50 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 10900.748215 seconds.
-  path: Assets/Prefabs/Player.prefab
-  artifactKey: Guid(cdb97943c8aa3422bbe518f4ce8b832f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player.prefab using Guid(cdb97943c8aa3422bbe518f4ce8b832f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0938476972b488c1b65b008fd5785650') in 0.347152 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.235433 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a0c064ef6c6ddf7c64873f358dbb86e') in 0.023679 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.790999 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '390deb88537b9065866b90fcd91fe17a') in 0.014801 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.391273 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aef74d4a7b309d5380076dec0df652ad') in 0.013246 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.535874 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a68490bf600e04f9a69b19bc54af4434') in 0.016606 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.188705 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd188885966b20c3e0c05b5f61b9ab19d') in 0.013047 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.809101 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a0a2a485aaadf4e9e61b058a1535503') in 0.014338 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.404074 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa079981f51c51145e1ef3acbf95b24e') in 0.014096 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.203817 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1dcb9e3dff22c2d5e31c85026b60aa9') in 0.015157 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.242127 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b364c6bad6175f91f0a7bfe15cbd1bb') in 0.015395 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.592967 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ff2c1c6d562f51ede737af2d7d2f3e6') in 0.012105 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.976130 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fff04c0aa801445f1b61a8a47547dd9') in 0.013666 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.779651 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b5f1973603ddfc1ca91c196a325b56e') in 0.011324 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.445154 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a7ce2c59a1f7369cc3af2f5430682dd') in 0.014705 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.010350 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d369446c363e4afb48f9b926e628fae') in 0.015777 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.976356 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6254e88181eb2986517921a44ffb57f') in 0.013322 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.385175 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ce42f4012ffec59d687a92f9cf21b1') in 0.013151 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.582897 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec014c21c8c57b2712f755eb616f2b49') in 0.015258 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.195041 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1491c88fda7510f2c856e7cd79346062') in 0.013720 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.596086 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a86f4ba11f22cc87e56dc8a9ae72d6a2') in 0.014310 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.382584 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b918fbfecf4b4630af400e844c92f9a') in 0.010804 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.199892 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20d8a71ea6a54e3e6fa57cef16073995') in 0.012720 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.792374 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a57ed0cdf90e904e552121a2e6c30f9') in 0.017461 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.185322 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02033b2b4b7b62983c7d3e8598582fe7') in 0.014513 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.698070 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e2d33afedd389c3c944bf498a43247') in 0.014628 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.998890 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28e5ecdd4095948a6d213a1ef346cd48') in 0.015323 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.985340 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c41b9746b48a1e59d67b4900acef936d') in 0.014105 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.988248 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '256aa0490f3ebd6e5279ff38ef773405') in 0.015368 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.002174 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4e4395335baef1c531766e4b16ab17') in 0.014941 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.374604 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd185fc846e5fd0a34ed18b01a6f676c1') in 0.012820 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.796033 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40870358f11c5c5a39cf1c0bb5654bea') in 0.013755 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.384110 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8405ad39bbd2880caf051129b1be7ee1') in 0.011197 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.598316 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b7af0ff1ec6c2443c0e5b7e90e8a351') in 0.014658 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.590839 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07190e0ab1d6e1edbc9798d6a4a65c92') in 0.013978 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.212309 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87c183a592f95cbc78f4e68318270eea') in 0.011847 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.189731 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15a2bb0d427e21655b393ddc7c09b736') in 0.017316 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.379813 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ac1011b924b34eaa495f2465806aefa') in 0.031411 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.169030 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca42cdd514319d0cd857d3c67b70716') in 0.020120 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.196678 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c7dbc9f4f8c130a293ca40c0180434') in 0.014633 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.411993 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b0ad6a555bdf0f57d89128963784b50') in 0.014473 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.797378 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b678ff8606c759d6eba9aa5f12d5190d') in 0.011184 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.593459 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76c628ed07d422e451ce286f85b803cd') in 0.011633 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.192427 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c04e9a63f7aa2226a55eaa01b9776156') in 0.014561 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.198151 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a21d92f8a5668e99d020c2ff8061cdbf') in 0.016387 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.380588 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb72cd3307c8b764c608380e07cf88d') in 0.012353 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.037246 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01e7ee0b006b1841e0b9d2b9418114d') in 0.017265 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.200709 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae46b9e26db2a980afc498322e24027') in 0.016430 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.971378 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4cd132dfd6aa711e2854693b4923557') in 0.011953 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.418027 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeb95587e962e08f84d98565d903b8cd') in 0.015855 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.186791 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '926d3e8187ea5bc9f393f9bb545c4b35') in 0.013784 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.013298 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b845a345be6aa7bd465028ce9969367c') in 0.014265 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.980633 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af1545a1a46590f587fa5ede11876908') in 0.012427 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.392128 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90d3c91f3e7c4907465e07b95149eddc') in 0.024899 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.380876 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a2c5e36df49bb8e4e213a86b84f9127') in 0.012474 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.211289 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d826fd2cbc8bd3662a49b11076a3f8d') in 0.014056 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.970138 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e1c0df364b68f85e2db444a412f8f91') in 0.016667 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.681126 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '764ef372eb44d4a22f967740d479278c') in 0.018479 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.669908 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a324e87a4bda7ee6ab9546bf6cf765d') in 0.024613 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.560233 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d8788ea3e9319f22b435f0588aada8a') in 0.015218 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.224456 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f2f93bd6b98f9a151f874ad631863d') in 0.018698 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.790229 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fdd0ce4097008628c7986528ce1b2a1') in 0.020765 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.210275 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9579dd552e11c77138a935cb22c8600d') in 0.014082 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.805871 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd31fd2603dea7492dff33763fb24d78d') in 0.013177 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.020933 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ba4fe7695a2864f7ea0385c86fc381') in 0.018286 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.996375 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12d3d3cedd5bdbce447c738ff40dff6d') in 0.016174 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.208578 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '525c7d89837fb49c8da2b0fcbe93818e') in 0.015724 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.429403 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c2c7effda7a1e2d55852987ebdaf511') in 0.016410 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.411402 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a920f6ae4604f52bd9142dc8f708051') in 0.015312 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.047455 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abb96e298448183f7ff116fff2ca2255') in 0.016053 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.209883 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4c0387c18fc9316504d18c802b59ff7') in 0.014807 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.236337 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0606a5dc34d89b39b70f6184f233061d') in 0.016963 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.215538 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12c169214372150045de023246309281') in 0.015582 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.976504 seconds.
+  Time since last request: 11693.297262 seconds.
   path: Assets/Prefabs/Fire Blueprint.prefab
   artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1190f427ee03010f9693c258f3bbe5e6') in 0.017609 seconds 
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad9799cb4a8fe5fe9d3e2b9e99cc3f4e') in 0.349128 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.993686 seconds.
+  Time since last request: 1.566315 seconds.
   path: Assets/Prefabs/Fire Blueprint.prefab
   artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51295fef298232081120d86ec3cbb491') in 0.025827 seconds 
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0716febcdbd215de346f7ff1a981dde7') in 0.018470 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.205463 seconds.
+  Time since last request: 0.964448 seconds.
   path: Assets/Prefabs/Fire Blueprint.prefab
   artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '202dad65d49cf03e4714356c3fb6f333') in 0.011964 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.293035 seconds.
-  path: Assets/fireParticles/fire.mat
-  artifactKey: Guid(13c4a351b12a05146af35294728420c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/fireParticles/fire.mat using Guid(13c4a351b12a05146af35294728420c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db073e84c73c2c8376b8d9f392ad30a1') in 0.044948 seconds 
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f263f73995f498de47a5fc2a489b30') in 0.013792 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 185.104093 seconds.
+  Time since last request: 2.216934 seconds.
   path: Assets/Prefabs/Fire Blueprint.prefab
   artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c103474e70dc45141bc69eed1e3494ab') in 0.012351 seconds 
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68e2632c8a074f91b589a1aeff70ebb2') in 0.015308 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.868474 seconds.
+  Time since last request: 2.243043 seconds.
   path: Assets/Prefabs/Fire Blueprint.prefab
   artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1696c1dafc7ac2571c6de99ebde35b77') in 0.015138 seconds 
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e46cf615bd3ea5144ef1827c28731f8') in 0.014106 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.815883 seconds.
+  Time since last request: 0.991946 seconds.
   path: Assets/Prefabs/Fire Blueprint.prefab
   artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88e9f4c6f9fd46a8068e7620144d059f') in 0.015355 seconds 
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8805ccf0a8ecda89974560b3e1533d64') in 0.014360 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.796714 seconds.
+  Time since last request: 5.320251 seconds.
   path: Assets/Prefabs/Fire Blueprint.prefab
   artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47edf21a9826691d31d5b77536f3667d') in 0.012770 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.391983 seconds.
-  path: Assets/Prefabs/Campfire Blueprint Material.mat
-  artifactKey: Guid(3042dd01525fe40409d5a2f80bfd1600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Campfire Blueprint Material.mat using Guid(3042dd01525fe40409d5a2f80bfd1600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1afcf4f88a962e237f351633eff6b0b7') in 0.014396 seconds 
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12478e305cd725471c7bff32e92dc5a7') in 0.013259 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.015704 seconds.
+Registered in 0.011217 seconds.
 Begin MonoManager ReloadAssembly
 Cleanup Blit
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -670,43 +226,267 @@ UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:OnDisable () (at Li
 Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.47 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.843 seconds
+- Completed reload, in  1.507 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1844ms)
-		BeginReloadAssembly (271ms)
+	ReloadAssembly (1507ms)
+		BeginReloadAssembly (199ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (73ms)
-		EndReloadAssembly (1411ms)
-			LoadAssemblies (182ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1173ms)
+			LoadAssemblies (141ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (427ms)
+			SetupTypeCache (379ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (70ms)
-			SetupLoadedEditorAssemblies (621ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (508ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (264ms)
+				ProcessInitializeOnLoadMethodAttributes (105ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (33ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (309.9 KB). Loaded Objects now: 5251.
+Memory consumption went from 189.0 MB to 188.7 MB.
+Total: 3.750100 ms (FindLiveObjects: 0.365100 ms CreateObjectMapping: 0.289500 ms MarkObjects: 3.019400 ms  DeleteObjects: 0.074900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 20.981970 seconds.
+  path: Assets/Prefabs/Fire Blueprint.prefab
+  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb71b96583dd465e540e8807d9c4bda7') in 0.249054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.674535 seconds.
+  path: Assets/Prefabs/Fire Blueprint.prefab
+  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c5755d7b10483f37762c715d120eba3') in 0.016523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.234456 seconds.
+  path: Assets/Prefabs/Fire Blueprint.prefab
+  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b4aad98f228c7cabd94807663e5ce0') in 0.026357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.220102 seconds.
+  path: Assets/Prefabs/Fire Blueprint.prefab
+  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc1aa1f1987c6f5f34eb558d51123562') in 0.013195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.634750 seconds.
+  path: Assets/Prefabs/Fire Blueprint.prefab
+  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b7554ab90c2f2656fc032b8516604e') in 0.012885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.000093 seconds.
+  path: Assets/Prefabs/Fire Blueprint.prefab
+  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51625cb600f3a88887739080c0e5160e') in 0.013906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.447238 seconds.
+  path: Assets/Prefabs/Fire Blueprint.prefab
+  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6667b2a3ed4f11a964883978ba88314') in 0.014735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.593267 seconds.
+  path: Assets/Prefabs/Fire Blueprint.prefab
+  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60a226570dd8be05772a4ae409356848') in 0.012949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.402116 seconds.
+  path: Assets/Prefabs/Fire Blueprint.prefab
+  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df728213de1bd6fe23163f3d6b2a1bc') in 0.012550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.282231 seconds.
+  path: Assets/Prefabs/Fire Blueprint.prefab
+  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e427d30883cb2d8558851d7940a1030e') in 0.014897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.199969 seconds.
+  path: Assets/Prefabs/Fire Blueprint.prefab
+  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab9afd20553140d48129148732adc3d3') in 0.012556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.529620 seconds.
+  path: Assets/Prefabs/Fire Blueprint.prefab
+  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ad7ecccfb7124326ecb11e68633a6e') in 0.013553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.650219 seconds.
+  path: Assets/Prefabs/Fire Blueprint.prefab
+  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79e4c8b6fa1928eaff168670ef828b87') in 0.018988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.295153 seconds.
+  path: Assets/Prefabs/Fire Blueprint.prefab
+  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f175fb1c97a3e1de9a8fbc14d226e97') in 0.014080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.197587 seconds.
+  path: Assets/Prefabs/Fire Blueprint.prefab
+  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '143ac6373fa74214a8198d3b977334ad') in 0.013796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.593019 seconds.
+  path: Assets/Prefabs/Fire Blueprint.prefab
+  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c3e7f6f92573407bdd2cd2a0a558f24') in 0.014434 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011503 seconds.
+Begin MonoManager ReloadAssembly
+Cleanup Blit
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEngine.Rendering.Blitter:Cleanup () (at Library/PackageCache/com.unity.render-pipelines.core@12.1.11/Runtime/Utilities/Blitter.cs:158)
+UnityEngine.Rendering.Universal.UniversalRenderer:Dispose (bool) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/Runtime/UniversalRenderer.cs:361)
+UnityEngine.Rendering.Universal.ScriptableRenderer:Dispose () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/Runtime/ScriptableRenderer.cs:565)
+UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:DestroyRenderer (UnityEngine.Rendering.Universal.ScriptableRenderer&) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/Runtime/Data/UniversalRenderPipelineAsset.cs:493)
+UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:DestroyRenderers () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/Runtime/Data/UniversalRenderPipelineAsset.cs:486)
+UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:OnDisable () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/Runtime/Data/UniversalRenderPipelineAsset.cs:509)
+
+(Filename: Library/PackageCache/com.unity.render-pipelines.core@12.1.11/Runtime/Utilities/Blitter.cs Line: 158)
+
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.487 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1488ms)
+		BeginReloadAssembly (205ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (1150ms)
+			LoadAssemblies (148ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (354ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (494ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (253ms)
+				ProcessInitializeOnLoadMethodAttributes (104ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (36ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (309.9 KB). Loaded Objects now: 5291.
+Memory consumption went from 189.1 MB to 188.8 MB.
+Total: 3.196200 ms (FindLiveObjects: 0.359200 ms CreateObjectMapping: 0.285200 ms MarkObjects: 2.470900 ms  DeleteObjects: 0.079600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009277 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.616 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1616ms)
+		BeginReloadAssembly (196ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1268ms)
+			LoadAssemblies (148ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (393ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (103ms)
+			SetupLoadedEditorAssemblies (521ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (134ms)
-				ProcessInitializeOnLoadAttributes (331ms)
-				ProcessInitializeOnLoadMethodAttributes (127ms)
-				AfterProcessingInitializeOnLoad (18ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (273ms)
+				ProcessInitializeOnLoadMethodAttributes (110ms)
+				AfterProcessingInitializeOnLoad (14ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (41ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.90 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.78 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (309.9 KB). Loaded Objects now: 5285.
-Memory consumption went from 189.1 MB to 188.8 MB.
-Total: 5.468600 ms (FindLiveObjects: 0.460100 ms CreateObjectMapping: 0.411100 ms MarkObjects: 4.503900 ms  DeleteObjects: 0.091700 ms)
+Unloading 21 unused Assets / (309.9 KB). Loaded Objects now: 5294.
+Memory consumption went from 189.0 MB to 188.7 MB.
+Total: 4.248300 ms (FindLiveObjects: 0.407400 ms CreateObjectMapping: 0.396900 ms MarkObjects: 3.353800 ms  DeleteObjects: 0.088300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -719,71 +499,51 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 25.460356 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d9beb262a03dbec40c0442f0f629b46') in 0.282687 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.034588 seconds.
+Registered in 0.010583 seconds.
 Begin MonoManager ReloadAssembly
-Cleanup Blit
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-UnityEngine.Rendering.Blitter:Cleanup () (at Library/PackageCache/com.unity.render-pipelines.core@12.1.11/Runtime/Utilities/Blitter.cs:158)
-UnityEngine.Rendering.Universal.UniversalRenderer:Dispose (bool) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/Runtime/UniversalRenderer.cs:361)
-UnityEngine.Rendering.Universal.ScriptableRenderer:Dispose () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/Runtime/ScriptableRenderer.cs:565)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:DestroyRenderer (UnityEngine.Rendering.Universal.ScriptableRenderer&) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/Runtime/Data/UniversalRenderPipelineAsset.cs:493)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:DestroyRenderers () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/Runtime/Data/UniversalRenderPipelineAsset.cs:486)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:OnDisable () (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/Runtime/Data/UniversalRenderPipelineAsset.cs:509)
-
-(Filename: Library/PackageCache/com.unity.render-pipelines.core@12.1.11/Runtime/Utilities/Blitter.cs Line: 158)
-
 Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.978 seconds
+- Completed reload, in  1.164 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1979ms)
-		BeginReloadAssembly (279ms)
+	ReloadAssembly (1165ms)
+		BeginReloadAssembly (177ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (64ms)
-		EndReloadAssembly (1502ms)
-			LoadAssemblies (203ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (874ms)
+			LoadAssemblies (115ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (465ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (69ms)
-			SetupLoadedEditorAssemblies (651ms)
+			SetupTypeCache (283ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (366ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (135ms)
-				ProcessInitializeOnLoadAttributes (319ms)
-				ProcessInitializeOnLoadMethodAttributes (158ms)
-				AfterProcessingInitializeOnLoad (26ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (186ms)
+				ProcessInitializeOnLoadMethodAttributes (79ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (53ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.31 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.33 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (309.9 KB). Loaded Objects now: 5325.
-Memory consumption went from 189.2 MB to 188.9 MB.
-Total: 4.558000 ms (FindLiveObjects: 0.433500 ms CreateObjectMapping: 0.433100 ms MarkObjects: 3.598800 ms  DeleteObjects: 0.091100 ms)
+Unloading 21 unused Assets / (309.9 KB). Loaded Objects now: 5297.
+Memory consumption went from 189.1 MB to 188.7 MB.
+Total: 3.453400 ms (FindLiveObjects: 0.387200 ms CreateObjectMapping: 0.370900 ms MarkObjects: 2.630700 ms  DeleteObjects: 0.063600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -797,8 +557,686 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 25.667588 seconds.
-  path: Assets/Prefabs/Fire Blueprint.prefab
-  artifactKey: Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire Blueprint.prefab using Guid(e44dc2c8ad3250d49bfbd5ee9ccf0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac2bebdef5895d3f87dcb5831655d062') in 0.266539 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008609 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.263 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1264ms)
+		BeginReloadAssembly (157ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (999ms)
+			LoadAssemblies (105ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (327ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (418ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (216ms)
+				ProcessInitializeOnLoadMethodAttributes (89ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (24ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (309.9 KB). Loaded Objects now: 5300.
+Memory consumption went from 188.9 MB to 188.6 MB.
+Total: 3.805000 ms (FindLiveObjects: 0.508300 ms CreateObjectMapping: 0.459600 ms MarkObjects: 2.756400 ms  DeleteObjects: 0.079400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008255 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.317 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1319ms)
+		BeginReloadAssembly (178ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (1020ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (320ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (450ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (225ms)
+				ProcessInitializeOnLoadMethodAttributes (97ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (24ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (309.9 KB). Loaded Objects now: 5303.
+Memory consumption went from 188.9 MB to 188.6 MB.
+Total: 4.282200 ms (FindLiveObjects: 0.565700 ms CreateObjectMapping: 0.422300 ms MarkObjects: 3.165400 ms  DeleteObjects: 0.127400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008556 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.301 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1301ms)
+		BeginReloadAssembly (167ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1011ms)
+			LoadAssemblies (124ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (318ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (437ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (230ms)
+				ProcessInitializeOnLoadMethodAttributes (86ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (309.8 KB). Loaded Objects now: 5306.
+Memory consumption went from 188.9 MB to 188.6 MB.
+Total: 3.691700 ms (FindLiveObjects: 0.504800 ms CreateObjectMapping: 0.400200 ms MarkObjects: 2.688300 ms  DeleteObjects: 0.097400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010372 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.195 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1196ms)
+		BeginReloadAssembly (167ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (902ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (254ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (391ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (208ms)
+				ProcessInitializeOnLoadMethodAttributes (76ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (309.8 KB). Loaded Objects now: 5309.
+Memory consumption went from 188.9 MB to 188.6 MB.
+Total: 9.005800 ms (FindLiveObjects: 0.370500 ms CreateObjectMapping: 0.453500 ms MarkObjects: 7.905000 ms  DeleteObjects: 0.275100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008877 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.239 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1240ms)
+		BeginReloadAssembly (166ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (946ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (299ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (405ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (215ms)
+				ProcessInitializeOnLoadMethodAttributes (81ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (309.9 KB). Loaded Objects now: 5312.
+Memory consumption went from 188.9 MB to 188.6 MB.
+Total: 3.905900 ms (FindLiveObjects: 0.459800 ms CreateObjectMapping: 0.362900 ms MarkObjects: 2.984100 ms  DeleteObjects: 0.098000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009684 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.262 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1263ms)
+		BeginReloadAssembly (175ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (965ms)
+			LoadAssemblies (128ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (316ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (398ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (204ms)
+				ProcessInitializeOnLoadMethodAttributes (77ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (24ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (309.9 KB). Loaded Objects now: 5315.
+Memory consumption went from 188.9 MB to 188.6 MB.
+Total: 3.580100 ms (FindLiveObjects: 0.370900 ms CreateObjectMapping: 0.362300 ms MarkObjects: 2.774700 ms  DeleteObjects: 0.071200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011271 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.325 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1325ms)
+		BeginReloadAssembly (191ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (997ms)
+			LoadAssemblies (139ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (317ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (454ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (150ms)
+				ProcessInitializeOnLoadAttributes (207ms)
+				ProcessInitializeOnLoadMethodAttributes (79ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (309.9 KB). Loaded Objects now: 5318.
+Memory consumption went from 188.9 MB to 188.6 MB.
+Total: 4.061400 ms (FindLiveObjects: 0.367600 ms CreateObjectMapping: 0.298400 ms MarkObjects: 3.307300 ms  DeleteObjects: 0.087200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009057 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.235 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1236ms)
+		BeginReloadAssembly (155ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (950ms)
+			LoadAssemblies (110ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (309ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (397ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (204ms)
+				ProcessInitializeOnLoadMethodAttributes (90ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (309.8 KB). Loaded Objects now: 5321.
+Memory consumption went from 188.9 MB to 188.6 MB.
+Total: 2.978100 ms (FindLiveObjects: 0.352900 ms CreateObjectMapping: 0.309200 ms MarkObjects: 2.241300 ms  DeleteObjects: 0.073800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009412 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.216 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1216ms)
+		BeginReloadAssembly (176ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (905ms)
+			LoadAssemblies (121ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (261ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (392ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (200ms)
+				ProcessInitializeOnLoadMethodAttributes (84ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (309.9 KB). Loaded Objects now: 5324.
+Memory consumption went from 188.9 MB to 188.6 MB.
+Total: 3.175800 ms (FindLiveObjects: 0.376300 ms CreateObjectMapping: 0.353800 ms MarkObjects: 2.368200 ms  DeleteObjects: 0.076700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011292 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.309 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1310ms)
+		BeginReloadAssembly (169ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1012ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (314ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (433ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (220ms)
+				ProcessInitializeOnLoadMethodAttributes (91ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (309.8 KB). Loaded Objects now: 5327.
+Memory consumption went from 188.9 MB to 188.6 MB.
+Total: 3.488000 ms (FindLiveObjects: 0.359900 ms CreateObjectMapping: 0.327100 ms MarkObjects: 2.726000 ms  DeleteObjects: 0.073900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009242 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.295 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1295ms)
+		BeginReloadAssembly (164ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (1001ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (324ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (405ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (211ms)
+				ProcessInitializeOnLoadMethodAttributes (86ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (309.8 KB). Loaded Objects now: 5330.
+Memory consumption went from 188.9 MB to 188.6 MB.
+Total: 4.129200 ms (FindLiveObjects: 0.407300 ms CreateObjectMapping: 0.329000 ms MarkObjects: 3.302500 ms  DeleteObjects: 0.089200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009631 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\dumit\OneDrive\Desktop\Projects\ECM2V.Pe4-URP\UNITY.ECM2V.Pe-URP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.291 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1292ms)
+		BeginReloadAssembly (176ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (995ms)
+			LoadAssemblies (126ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (313ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (426ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (220ms)
+				ProcessInitializeOnLoadMethodAttributes (89ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (24ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (309.8 KB). Loaded Objects now: 5333.
+Memory consumption went from 189.0 MB to 188.7 MB.
+Total: 3.386800 ms (FindLiveObjects: 0.377700 ms CreateObjectMapping: 0.280500 ms MarkObjects: 2.646000 ms  DeleteObjects: 0.081400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
