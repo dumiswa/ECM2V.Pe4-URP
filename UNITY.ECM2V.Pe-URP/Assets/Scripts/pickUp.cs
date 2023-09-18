@@ -12,7 +12,6 @@ public class pickUp : MonoBehaviour
     public GameObject Player;
     public bool isLockedOn = false;
 
-
     public float rayDistance;
     public float followSpeed = 5.0f;
 
@@ -24,7 +23,7 @@ public class pickUp : MonoBehaviour
     public GameObject pickedUpItem;
     public GameObject fire;
 
-    public Transform environment;
+    public Transform campBlueprint;
 
     public Transform pickUpPoint;
     public Transform fireBlueprint;
@@ -34,6 +33,7 @@ public class pickUp : MonoBehaviour
 
     LayerMask item;
     LayerMask campFire;
+    LayerMask groundLayerMask;
 
     RaycastHit hit;
 
@@ -42,6 +42,7 @@ public class pickUp : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         item = LayerMask.NameToLayer("item");
         campFire = LayerMask.NameToLayer("CampFire");
+        groundLayerMask = LayerMask.NameToLayer("whatIsGround");
         GameObject particleSystemObject = fire;
         particleSystemObject.SetActive(false);
     }
@@ -52,9 +53,22 @@ public class pickUp : MonoBehaviour
 
         Ray ray = rayCamera.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hit, rayDistance) && hit.collider.tag == "Item")
+        if (Physics.Raycast(ray, out hit, rayDistance))
         {
+
             selectedItem = hit.collider.gameObject;
+
+            if (hit.transform.gameObject.layer == groundLayerMask)
+            {
+                if (Input.GetMouseButton(0))
+                {
+
+                    rayDistance = 5;
+
+                    campBlueprint.position = new Vector3(hit.point.x, 0, hit.point.z);
+                    //campBlueprint.rotation = Quaternion.identity;
+                }
+            }
 
             if (hit.transform.gameObject.layer == item)
             {
@@ -77,6 +91,7 @@ public class pickUp : MonoBehaviour
                     lastSelectedItem = null;
                 }
             }
+
             else
             {
                 if (lastSelectedItem != null)
@@ -96,7 +111,7 @@ public class pickUp : MonoBehaviour
                 lastSelectedItem.GetComponent<Renderer>().material.color = originalColor;
             }
             isItemSelected = false;
-            //lastSelectedItem = null;
+            lastSelectedItem = null;
             selectedItem = null;
         }
 
@@ -110,44 +125,44 @@ public class pickUp : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.G))
         {
-            if (pickedUpItem != null && selectedItem != lastSelectedItem)
+            if (pickedUpItem != null )
             {
                 Drop();
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && canPlace)
-        {
-            Place();
-        }
+        //if (Input.GetKeyDown(KeyCode.E) && canPlace)
+        //{
+        //    Place();
+        //}
 
-        if (Physics.Raycast(ray, out hit, rayDistance))
-        {
-            if (hit.transform.gameObject.layer == campFire)
-            {
-                if (pickedUpItem != null)
-                {
-                    print("placed item");
-                    canPlace = true;
-                }
+        //if (Physics.Raycast(ray, out hit, rayDistance))
+        //{
+        //    if (hit.transform.gameObject.layer == campFire)
+        //    {
+        //        if (pickedUpItem != null)
+        //        {
+        //            print("placed item");
+        //            canPlace = true;
+        //        }
 
-                if (Input.GetKey(KeyCode.X))
-                {
-                    // isLockedOn = !isLockedOn;
-                    startFire();
-                }
+        //        if (Input.GetKey(KeyCode.X))
+        //        {
+        //            // isLockedOn = !isLockedOn;
+        //            startFire();
+        //        }
 
-                if (isLockedOn)
-                {
+        //        if (isLockedOn)
+        //        {
 
-                }
-            }
+        //        }
+        //    }
 
-            else
-            {
-                canPlace = false;
-            }
-        }
+        //    else
+        //    {
+        //        canPlace = false;
+        //    }
+        //}
 
         //fireBlueprint.position = new Vector3(hit.point.x, 0, hit.point.z);
         //fireBlueprint.rotation = Quaternion.identity;
@@ -160,51 +175,12 @@ public class pickUp : MonoBehaviour
 
     }
 
-    /*void PickUp()
-    {
-        *//* if (selectedItem != null && pickedUpItem == null)
-         {
-             Rigidbody itemRigidBody = selectedItem.GetComponent<Rigidbody>();
-             if (itemRigidBody != null)
-             {
-                 itemRigidBody.useGravity = false;
-                 itemRigidBody.isKinematic = true;
-             }
-
-             selectedItem.transform.position = pickUpPoint.position;
-             selectedItem.transform.rotation = pickUpPoint.rotation;
-
-             selectedItem.transform.SetParent(pickUpPoint);
-
-             pickedUpItem = selectedItem;
-             selectedItem = null;
-         }*//*
-
-        selectedItem.GetComponent<Rigidbody>().useGravity = false;
-        selectedItem.GetComponent<Rigidbody>().isKinematic = true;
-        selectedItem.transform.position = Vector3.zero;
-        selectedItem.transform.rotation = Quaternion.identity;
-        selectedItem.transform.SetParent(pickUpPoint, false);
-
-        pickedUpItem = selectedItem;
-    }
-    
-        void Drop()
-        {
-            if (pickedUpItem != null)
-            {
-                pickedUpItem.GetComponent<Rigidbody>().useGravity = true;
-                pickedUpItem.GetComponent<Rigidbody>().isKinematic = false;
-                pickedUpItem.transform.SetParent(environment);
-                pickedUpItem.transform.parent = null;
-                pickedUpItem = null;
-            }
-        }*/
 
     void PickUp()
     {
         selectedItem.GetComponent<Rigidbody>().useGravity = false;
         selectedItem.GetComponent<Rigidbody>().isKinematic = true;
+        selectedItem.GetComponent<CapsuleCollider>().enabled = false;
         selectedItem.transform.position = Vector3.zero;
         selectedItem.transform.rotation = Quaternion.identity;
         selectedItem.transform.SetParent(pickUpPoint, false);
@@ -214,6 +190,7 @@ public class pickUp : MonoBehaviour
 
     void Drop()
     {
+        pickedUpItem.GetComponent<CapsuleCollider>().enabled = true;
         pickedUpItem.GetComponent<Rigidbody>().useGravity = true;
         pickedUpItem.GetComponent<Rigidbody>().isKinematic = false;
         pickedUpItem.transform.parent = null;

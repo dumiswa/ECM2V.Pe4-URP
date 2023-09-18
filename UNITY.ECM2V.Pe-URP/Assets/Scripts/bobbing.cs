@@ -4,7 +4,7 @@ public class bobbing : MonoBehaviour
 {
     public float walkingBobbingSpeed = 14f;
     public float bobbingAmount = 0.05f;
-    public movement controller;
+    public Movement controller;
 
     float defaultPosY = 0;
     float timer = 0;
@@ -14,7 +14,7 @@ public class bobbing : MonoBehaviour
         defaultPosY = transform.localPosition.y;
     }
 
-    void Update()
+    /*void Update()
     {
         if (Mathf.Abs(controller.moveDirection.x) > 0.1f || Mathf.Abs(controller.moveDirection.z) > 0.1f)
         {
@@ -26,5 +26,5 @@ public class bobbing : MonoBehaviour
             timer = 0;
             transform.localPosition = new Vector3(transform.localPosition.x, Mathf.Lerp(transform.localPosition.y, defaultPosY, Time.deltaTime * walkingBobbingSpeed), transform.localPosition.z);
         }
-    }
+    }*/
 }
