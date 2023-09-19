@@ -9,19 +9,15 @@ public class MouseAim : MonoBehaviour
     float xRotation = 0f;
     float timer = 0;
 
-    // Store the initial local position of the camera
     Vector3 initialLocalPosition;
 
     public Transform playerBody;
 
-    // Modify this to indicate if the player is moving
     bool isMoving = false;
 
     void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
-
-        // Store the initial local position
         initialLocalPosition = transform.localPosition;
     }
 
@@ -45,7 +41,7 @@ public class MouseAim : MonoBehaviour
 
     void HandleBobbing()
     {
-        // Modify this to indicate if the player is moving
+   
         if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f || Mathf.Abs(Input.GetAxis("Vertical")) > 0.1f)
         {
             isMoving = true;
@@ -57,7 +53,6 @@ public class MouseAim : MonoBehaviour
             timer = 0;
         }
 
-        // Calculate the bobbing effect
         float bobbingOffset = isMoving ? Mathf.Sin(timer) * bobbingAmount : 0f;
         transform.localPosition = new Vector3(initialLocalPosition.x, initialLocalPosition.y + bobbingOffset, initialLocalPosition.z);
     }
