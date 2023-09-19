@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] AudioSource mainMenuSong;
+
+    void Awake()
+    {
+        mainMenuSong.playOnAwake = true; 
+    }
     public void Play()
     {
         SceneManager.LoadScene("Prototype");
