@@ -41,7 +41,7 @@ public class MouseAim : MonoBehaviour
 
     void HandleBobbing()
     {
-   
+
         if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f || Mathf.Abs(Input.GetAxis("Vertical")) > 0.1f)
         {
             isMoving = true;

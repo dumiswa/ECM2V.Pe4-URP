@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
-//using UnityEditor.PackageManager;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,18 +12,22 @@ public class pickUp : MonoBehaviour
     public GameObject Player;
     public bool isLockedOn = false;
 
-    public float rayDistance;
+    public float itemPickUpDistance;
+    public float campfireBlueprintDistance;
     public float followSpeed = 5.0f;
 
     bool isItemSelected = false;
     bool canPlace = false;
+
+    bool toPlaceCampfireBlueprint = false;
 
     public GameObject selectedItem;
     public GameObject lastSelectedItem;
     public GameObject pickedUpItem;
     public GameObject fire;
 
-    public Transform campBlueprint;
+    public GameObject campBlueprint;
+    public GameObject camp;
 
     public Transform pickUpPoint;
     public Transform fireBlueprint;
@@ -35,7 +39,8 @@ public class pickUp : MonoBehaviour
     LayerMask campFire;
     LayerMask groundLayerMask;
 
-    RaycastHit hit;
+    RaycastHit hitForItem;
+    RaycastHit hitForCampBlueprint;
 
     void Start()
     {
@@ -52,25 +57,14 @@ public class pickUp : MonoBehaviour
     {
 
         Ray ray = rayCamera.ScreenPointToRay(Input.mousePosition);
+        //Ray rayCamp = rayCamera.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hit, rayDistance))
+        if (Physics.Raycast(ray, out hitForItem, itemPickUpDistance))
         {
 
-            selectedItem = hit.collider.gameObject;
+            selectedItem = hitForItem.collider.gameObject;
 
-            if (hit.transform.gameObject.layer == groundLayerMask)
-            {
-                if (Input.GetMouseButton(0))
-                {
-
-                    rayDistance = 5;
-
-                    campBlueprint.position = new Vector3(hit.point.x, 0, hit.point.z);
-                    //campBlueprint.rotation = Quaternion.identity;
-                }
-            }
-
-            if (hit.transform.gameObject.layer == item)
+            if (hitForItem.transform.gameObject.layer == item)
             {
                 if (isItemSelected == false)
                 {
@@ -115,57 +109,48 @@ public class pickUp : MonoBehaviour
             selectedItem = null;
         }
 
+
+
+        if (Physics.Raycast(ray, out hitForCampBlueprint, campfireBlueprintDistance))
+        {
+
+
+            if (toPlaceCampfireBlueprint)
+            {
+                campBlueprint.transform.position = new Vector3(hitForCampBlueprint.point.x, 0, hitForCampBlueprint.point.z);
+                campBlueprint.transform.rotation = Quaternion.identity;
+            }
+
+        }
+
+        
+
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (selectedItem != null && pickedUpItem == null)
+            if (selectedItem != null && pickedUpItem == null && hitForItem.transform.gameObject.layer == item && !toPlaceCampfireBlueprint)
             {
                 PickUp();
+            }
+
+            if (hitForCampBlueprint.transform.gameObject.layer == groundLayerMask && campBlueprint!=null && pickedUpItem == null)
+            {
+                campBlueprint.SetActive(true);
+                toPlaceCampfireBlueprint = true;
             }
         }
 
         if (Input.GetKeyDown(KeyCode.G))
         {
-            if (pickedUpItem != null )
+            if (pickedUpItem != null)
             {
                 Drop();
             }
+            else if (toPlaceCampfireBlueprint && campBlueprint.GetComponent<CampBlueprintScript>().ChildMaterial.color != campBlueprint.GetComponent<CampBlueprintScript>().invalidColor)
+            {
+                PlaceCampFire();
+                toPlaceCampfireBlueprint = false;
+            }
         }
-
-        //if (Input.GetKeyDown(KeyCode.E) && canPlace)
-        //{
-        //    Place();
-        //}
-
-        //if (Physics.Raycast(ray, out hit, rayDistance))
-        //{
-        //    if (hit.transform.gameObject.layer == campFire)
-        //    {
-        //        if (pickedUpItem != null)
-        //        {
-        //            print("placed item");
-        //            canPlace = true;
-        //        }
-
-        //        if (Input.GetKey(KeyCode.X))
-        //        {
-        //            // isLockedOn = !isLockedOn;
-        //            startFire();
-        //        }
-
-        //        if (isLockedOn)
-        //        {
-
-        //        }
-        //    }
-
-        //    else
-        //    {
-        //        canPlace = false;
-        //    }
-        //}
-
-        //fireBlueprint.position = new Vector3(hit.point.x, 0, hit.point.z);
-        //fireBlueprint.rotation = Quaternion.identity;
 
 
     }
@@ -198,39 +183,11 @@ public class pickUp : MonoBehaviour
         selectedItem = null;
     }
 
-    void Place()
+    void PlaceCampFire()
     {
-        Destroy(pickedUpItem.gameObject);
-
-        Color placedColor = new Color(255f / 255f, 87f / 255f, 51f / 255f);
-
-        Transform[] cubes = fireBlueprint.GetComponentsInChildren<Transform>();
-
-        foreach (Transform cube in cubes)
-        {
-            if (cube != fireBlueprint)
-            {
-                Renderer cubeRenderer = cube.GetComponent<Renderer>();
-
-                if (cubeRenderer != null)
-                {
-                    cubeRenderer.material.color = placedColor;
-                }
-            }
-        }
-        pickedUpItem = null;
-        canPlace = false;
+        Instantiate(camp, campBlueprint.transform.position, Quaternion.identity);
+        Destroy(campBlueprint);
     }
 
-    void startFire()
-    {
-        /*  Vector3 lockInPosition = fireBlueprint.position;
-          lockInPosition.z = transform.position.z;
-
-          transform.position = Vector3.Lerp(transform.position, lockInPosition, followSpeed);
-          print("lockIn");*/
-        GameObject particleSystemObject = fire;
-        particleSystemObject.SetActive(true);
-    }
 
 }

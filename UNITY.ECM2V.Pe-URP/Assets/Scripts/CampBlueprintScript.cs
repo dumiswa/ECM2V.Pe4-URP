@@ -12,7 +12,7 @@ public class CampBlueprintScript : MonoBehaviour
 
     void Start()
     {
-        
+        ChildMaterial.color = validColor;
     }
 
     void Update()
@@ -20,10 +20,12 @@ public class CampBlueprintScript : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
-
-        ChildMaterial.color = invalidColor;
+        if (other.gameObject.layer != LayerMask.NameToLayer("whatIsGround")) {
+            ChildMaterial.color = invalidColor;
+        }
+        
     }
 
     void OnTriggerExit(Collider other)
