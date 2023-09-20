@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
 
     void Awake()
     {
-        mainMenuSong.playOnAwake = true; 
+        //mainMenuSong. = true; 
     }
     public void Play()
     {
