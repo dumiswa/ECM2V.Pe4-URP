@@ -14,6 +14,7 @@ public class Movement : MonoBehaviour
     public float jumpForce;
     public LayerMask whatIsGround;
     public bool isGrounded;
+    public bool isWalking;
 
     public float height;
 
@@ -53,7 +54,7 @@ public class Movement : MonoBehaviour
 
         else
         {
-            rb.AddForce(move.normalized * speed * 10f * airFriction, ForceMode.Force);
+            rb.AddForce(move.normalized * speed * 10f * airFriction, ForceMode.Force);      
         }
 
     }
