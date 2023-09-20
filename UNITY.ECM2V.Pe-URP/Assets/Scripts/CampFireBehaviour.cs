@@ -14,26 +14,32 @@ public class CampFireBehaviour : MonoBehaviour
         
     public AudioSource campFireSound;
 
+    bool toSpread = false;
+
     void Start()
     {
         smokePart = groupOfParticles.transform.GetChild(0).GetComponent<ParticleSystem>();
-        orangePart = groupOfParticles.transform.GetChild(1).GetComponent<ParticleSystem>();
-        
+        orangePart = groupOfParticles.transform.GetChild(1).GetComponent<ParticleSystem>();       
     }
 
     void Update()
     {
-        //var smokeMain = smokePart.main;
-        //var orangeMain = orangePart.main;
+       if(Input.GetKeyDown(KeyCode.R))
+       {
+            toSpread = true;
+       }
 
-        //smokeMain.startLifetime = 0.3f + amountOfLogs+2;
-        //orangeMain.startLifetime = 0.3f + amountOfLogs+2;
+       if (toSpread)
+        {
+            ParticleSystem.ShapeModule smokeShape = smokePart.shape;
+            smokeShape.radius += 0.02f;
 
-        //smokeMain.startSpeed.constantMin *= 1.5f;
-        //smokeMain.startSpeed.constantMax *= 1.5f;
+            ParticleSystem.ShapeModule orangeShape = orangePart.shape;
+            orangeShape.radius += 0.02f;
 
-        //orangeMain.startSpeed.constantMin *= 1.5f;
-        //orangeMain.startSpeed.constantMax *= 1.5f;
+            ModifyRateOverTime(smokePart, smokeShape.radius / 0.4f);
+            ModifyRateOverTime(orangePart, orangeShape.radius / 0.4f);
+        }
     }
 
     public void AddLogs()
@@ -73,5 +79,14 @@ public class CampFireBehaviour : MonoBehaviour
 
         amountOfLogs++;
         
+    }
+
+    void ModifyRateOverTime(ParticleSystem particleSystem, float rateChange)    
+    {
+        var emission = particleSystem.emission;
+
+        ParticleSystem.MinMaxCurve rateCurve = emission.rateOverTime;
+        rateCurve.constantMax = 26 * rateChange;
+        emission.rateOverTime = rateCurve;
     }
 }
