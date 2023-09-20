@@ -45,6 +45,8 @@ public class pickUp : MonoBehaviour
     RaycastHit hitForSmallRange;
     RaycastHit hitForCampBlueprint;
 
+    [SerializeField] AudioSource pickUpSound;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -190,13 +192,13 @@ public class pickUp : MonoBehaviour
 
     void PickUp()
     {
+        pickUpSound.Play();
         selectedItem.GetComponent<Rigidbody>().useGravity = false;
         selectedItem.GetComponent<Rigidbody>().isKinematic = true;
         selectedItem.GetComponent<CapsuleCollider>().enabled = false;
         selectedItem.transform.position = Vector3.zero;
         selectedItem.transform.rotation = Quaternion.identity;
         selectedItem.transform.SetParent(pickUpPoint, false);
-
         pickedUpItem = selectedItem;
     }
 

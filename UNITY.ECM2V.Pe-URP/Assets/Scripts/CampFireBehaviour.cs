@@ -11,11 +11,14 @@ public class CampFireBehaviour : MonoBehaviour
 
     public ParticleSystem orangePart;
     public ParticleSystem smokePart;
+        
+    public AudioSource campFireSound;
 
     void Start()
     {
         smokePart = groupOfParticles.transform.GetChild(0).GetComponent<ParticleSystem>();
         orangePart = groupOfParticles.transform.GetChild(1).GetComponent<ParticleSystem>();
+        
     }
 
     void Update()
@@ -31,15 +34,17 @@ public class CampFireBehaviour : MonoBehaviour
 
         //orangeMain.startSpeed.constantMin *= 1.5f;
         //orangeMain.startSpeed.constantMax *= 1.5f;
-
-       
-
     }
 
     public void AddLogs()
     {
         if (amountOfLogs == 0) {
             groupOfParticles.SetActive(true);
+            campFireSound.Play();
+        }
+
+        if (amountOfLogs == 1) {
+            
         }
 
         var smokeMain = smokePart.main;
@@ -67,5 +72,6 @@ public class CampFireBehaviour : MonoBehaviour
         orangeShape.radius = Mathf.Clamp(orangeShape.radius, 1, 2.2f);
 
         amountOfLogs++;
+        
     }
 }
