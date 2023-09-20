@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class pickUp : MonoBehaviour
 {
@@ -17,14 +18,14 @@ public class pickUp : MonoBehaviour
     public float followSpeed = 5.0f;
 
     bool isItemSelected = false;
-    bool canPlace = false;
+    bool isLookingAtFire = false;
 
     bool toPlaceCampfireBlueprint = false;
 
     public GameObject selectedItem;
     public GameObject lastSelectedItem;
     public GameObject pickedUpItem;
-    public GameObject fire;
+    //public GameObject fire;
 
     public GameObject campBlueprint;
     public GameObject camp;
@@ -35,14 +36,14 @@ public class pickUp : MonoBehaviour
     public Color originalColor;
     public Color highlightedColor = Color.cyan;
 
+    public TMP_Text guideText;
+
     LayerMask item;
     LayerMask campFire;
     LayerMask groundLayerMask;
 
-    RaycastHit hitForItem;
+    RaycastHit hitForSmallRange;
     RaycastHit hitForCampBlueprint;
-
-    [SerializeField] AudioSource pickUpItem;
 
     void Start()
     {
@@ -50,23 +51,25 @@ public class pickUp : MonoBehaviour
         item = LayerMask.NameToLayer("item");
         campFire = LayerMask.NameToLayer("CampFire");
         groundLayerMask = LayerMask.NameToLayer("whatIsGround");
-        GameObject particleSystemObject = fire;
-        particleSystemObject.SetActive(false);
+        //GameObject particleSystemObject = fire;
+        //particleSystemObject.SetActive(false);
     }
 
 
     void Update()
     {
 
-        Ray ray = rayCamera.ScreenPointToRay(Input.mousePosition);
-        //Ray rayCamp = rayCamera.ScreenPointToRay(Input.mousePosition);
+        guideText.text = "";
+        isLookingAtFire = false;
 
-        if (Physics.Raycast(ray, out hitForItem, itemPickUpDistance))
+        Ray ray = rayCamera.ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(ray, out hitForSmallRange, itemPickUpDistance))
         {
 
-            selectedItem = hitForItem.collider.gameObject;
+            selectedItem = hitForSmallRange.collider.gameObject;
 
-            if (hitForItem.transform.gameObject.layer == item)
+            if (hitForSmallRange.transform.gameObject.layer == item)
             {
                 if (isItemSelected == false)
                 {
@@ -98,6 +101,17 @@ public class pickUp : MonoBehaviour
                 lastSelectedItem = null;
             }
 
+            if (hitForSmallRange.transform.gameObject.layer == campFire)
+            {
+                isLookingAtFire = true;
+
+                if (pickedUpItem != null)
+                {
+                    guideText.text = "Put in the campfire";
+                }
+
+            }
+            
         }
 
         else
@@ -129,7 +143,7 @@ public class pickUp : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (selectedItem != null && pickedUpItem == null && hitForItem.transform.gameObject.layer == item && !toPlaceCampfireBlueprint)
+            if (selectedItem != null && pickedUpItem == null && hitForSmallRange.transform.gameObject.layer == item && !toPlaceCampfireBlueprint)
             {
                 PickUp();
             }
@@ -145,8 +159,19 @@ public class pickUp : MonoBehaviour
         {
             if (pickedUpItem != null)
             {
-                Drop();
+                if (!isLookingAtFire)
+                {
+                    Drop();
+                }
+                else
+                {
+                    Destroy(pickedUpItem);
+
+                    hitForSmallRange.transform.gameObject.GetComponent<CampFireBehaviour>().AddLogs();
+                }
+                
             }
+
             else if (toPlaceCampfireBlueprint && campBlueprint.GetComponent<CampBlueprintScript>().ChildMaterial.color != campBlueprint.GetComponent<CampBlueprintScript>().invalidColor)
             {
                 PlaceCampFire();
@@ -165,13 +190,13 @@ public class pickUp : MonoBehaviour
 
     void PickUp()
     {
-        pickUpItem.Play();
         selectedItem.GetComponent<Rigidbody>().useGravity = false;
         selectedItem.GetComponent<Rigidbody>().isKinematic = true;
         selectedItem.GetComponent<CapsuleCollider>().enabled = false;
         selectedItem.transform.position = Vector3.zero;
         selectedItem.transform.rotation = Quaternion.identity;
         selectedItem.transform.SetParent(pickUpPoint, false);
+
         pickedUpItem = selectedItem;
     }
 

@@ -7,7 +7,7 @@ public class PlayerCamera : MonoBehaviour
 
     public float walkingBobbingSpeed = 14f;
     public float bobbingAmount = 0.05f;
-    public Movement controller;
+    public movement controller;
 
     float defaultPosY = 0;
     float timer = 0;
