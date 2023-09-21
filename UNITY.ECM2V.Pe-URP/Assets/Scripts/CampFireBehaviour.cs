@@ -13,6 +13,7 @@ public class CampFireBehaviour : MonoBehaviour
     public ParticleSystem smokePart;
         
     public AudioSource campFireSound;
+    public AudioSource placeWoodSoound;
 
     bool toSpread = false;
 
@@ -46,12 +47,14 @@ public class CampFireBehaviour : MonoBehaviour
     {
         if (amountOfLogs == 0) {
             groupOfParticles.SetActive(true);
-            campFireSound.Play();
+            placeWoodSoound.Play();
         }
 
-        if (amountOfLogs == 1) {
-            
+        if (amountOfLogs <=0)
+        {
+            campFireSound.Play();
         }
+      
 
         var smokeMain = smokePart.main;
         var orangeMain = orangePart.main;
@@ -77,8 +80,7 @@ public class CampFireBehaviour : MonoBehaviour
         orangeShape.radius += 0.2f;
         orangeShape.radius = Mathf.Clamp(orangeShape.radius, 1, 2.2f);
 
-        amountOfLogs++;
-        
+        amountOfLogs++;   
     }
 
     void ModifyRateOverTime(ParticleSystem particleSystem, float rateChange)    

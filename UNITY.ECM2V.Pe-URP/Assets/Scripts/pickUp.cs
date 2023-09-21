@@ -46,6 +46,7 @@ public class pickUp : MonoBehaviour
     RaycastHit hitForCampBlueprint;
 
     [SerializeField] AudioSource pickUpSound;
+    [SerializeField] AudioSource placeWoodSound;
 
     void Start()
     {
@@ -73,13 +74,15 @@ public class pickUp : MonoBehaviour
 
             if (hitForSmallRange.transform.gameObject.layer == item)
             {
+                guideText.text = "Press E to pick up";
+
                 if (isItemSelected == false)
-                {
+                {                   
                     isItemSelected = true;
 
                     originalColor = selectedItem.GetComponent<Renderer>().material.color;
                     selectedItem.GetComponent<Renderer>().material.color = highlightedColor;
-                    lastSelectedItem = selectedItem;
+                    lastSelectedItem = selectedItem;                   
                 }
 
                 if (selectedItem != lastSelectedItem && isItemSelected)
@@ -109,7 +112,7 @@ public class pickUp : MonoBehaviour
 
                 if (pickedUpItem != null)
                 {
-                    guideText.text = "Put in the campfire";
+                    guideText.text = "Press G to place in the campfire";
                 }
 
             }
@@ -170,6 +173,7 @@ public class pickUp : MonoBehaviour
                     Destroy(pickedUpItem);
 
                     hitForSmallRange.transform.gameObject.GetComponent<CampFireBehaviour>().AddLogs();
+                    placeWoodSound.Play();
                 }
                 
             }

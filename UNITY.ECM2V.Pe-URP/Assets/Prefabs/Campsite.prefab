@@ -971,9 +971,16 @@ MonoBehaviour:
   orangePart: {fileID: 925446956873915692}
   smokePart: {fileID: 4997102412346626879}
   campFireSound: {fileID: 2008705127}
+  placeWoodSoound: {fileID: 7498397715383716849}
 --- !u!4 &6478923740842014859 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 602377564380197421, guid: c196c56a55a90ad458275114ab43f2dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 5887842868431702694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &7498397715383716849 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4159770361497141591, guid: c196c56a55a90ad458275114ab43f2dd,
     type: 3}
   m_PrefabInstance: {fileID: 5887842868431702694}
   m_PrefabAsset: {fileID: 0}
