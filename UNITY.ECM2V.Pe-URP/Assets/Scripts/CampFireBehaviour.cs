@@ -38,8 +38,8 @@ public class CampFireBehaviour : MonoBehaviour
             ParticleSystem.ShapeModule orangeShape = orangePart.shape;
             orangeShape.radius += 0.02f;
 
-            ModifyRateOverTime(smokePart, smokeShape.radius / 0.4f);
-            ModifyRateOverTime(orangePart, orangeShape.radius / 0.4f);
+            ModifyRateOverTime(smokePart, smokeShape.radius / 0.8f);
+            ModifyRateOverTime(orangePart, orangeShape.radius / 0.8f);
         }
     }
 
