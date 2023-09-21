@@ -21,7 +21,7 @@ public class ParticleCollisionHandler : MonoBehaviour
             Vector3 collisionPosition = collisionEvents[0].intersection;
             Debug.Log("Collision at position: " + collisionPosition);
 
-            Vector3 spawnPoint = new Vector3(collisionPosition.x + (other.transform.position.x - collisionPosition.x) / 1.5f, collisionPosition.y - 0.2f , collisionPosition.z + (other.transform.position.z - collisionPosition.z) / 1.5f);
+            Vector3 spawnPoint = new Vector3(collisionPosition.x + (other.transform.position.x - collisionPosition.x) / 1.4f, collisionPosition.y - 0.2f , collisionPosition.z + (other.transform.position.z - collisionPosition.z) / 1.4f);
 
             Instantiate(firePrefab, spawnPoint, Quaternion.Euler(-90,0,0));
 

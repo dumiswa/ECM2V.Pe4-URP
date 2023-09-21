@@ -59,17 +59,17 @@ public class CampFireBehaviour : MonoBehaviour
         var smokeMain = smokePart.main;
         var orangeMain = orangePart.main;
 
-        smokeMain.startLifetime = new ParticleSystem.MinMaxCurve(0.3f + amountOfLogs + 2);
-        orangeMain.startLifetime = new ParticleSystem.MinMaxCurve(0.3f + amountOfLogs + 2);
+        smokeMain.startLifetime = new ParticleSystem.MinMaxCurve(0.3f + amountOfLogs + 2.5F);
+        orangeMain.startLifetime = new ParticleSystem.MinMaxCurve(0.3f + amountOfLogs + 2.5F);
 
         ParticleSystem.MinMaxCurve smokeSpeedCurve = smokeMain.startSpeed;
         //smokeSpeedCurve.constantMin *= 1.5f;
-        smokeSpeedCurve.constantMax *= 1.5f;
+        smokeSpeedCurve.constantMax *= 2f;
         smokeMain.startSpeed = smokeSpeedCurve;
 
         ParticleSystem.MinMaxCurve orangeSpeedCurve = orangeMain.startSpeed;
         //orangeSpeedCurve.constantMin *= 1.5f;
-        orangeSpeedCurve.constantMax *= 1.5f;
+        orangeSpeedCurve.constantMax *= 2f;
         orangeMain.startSpeed = orangeSpeedCurve;
 
         ParticleSystem.ShapeModule smokeShape = smokePart.shape;
