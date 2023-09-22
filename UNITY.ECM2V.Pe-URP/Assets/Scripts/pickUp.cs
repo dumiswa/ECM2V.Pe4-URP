@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
-using UnityEditor.PackageManager;
+
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -36,6 +36,7 @@ public class pickUp : MonoBehaviour
     public Color originalColor;
     public Color highlightedColor = Color.cyan;
 
+
     public TMP_Text guideText;
 
     LayerMask item;
@@ -47,6 +48,11 @@ public class pickUp : MonoBehaviour
 
     [SerializeField] AudioSource pickUpSound;
     [SerializeField] AudioSource placeWoodSound;
+    [SerializeField] AudioSource ambientSound;
+    [SerializeField] AudioSource emergency;
+
+
+    public bool toDo = false;
 
     void Start()
     {
@@ -56,13 +62,25 @@ public class pickUp : MonoBehaviour
         groundLayerMask = LayerMask.NameToLayer("whatIsGround");
         //GameObject particleSystemObject = fire;
         //particleSystemObject.SetActive(false);
+        ambientSound.Play();
+    }
+
+    public void PlayEmergency()
+    {
+        ambientSound.Stop();
+        emergency.Play();
     }
 
 
     void Update()
     {
 
-        guideText.text = "";
+        if (toDo) 
+        {
+            guideText.text = "";
+        } 
+
+        
         isLookingAtFire = false;
 
         Ray ray = rayCamera.ScreenPointToRay(Input.mousePosition);
@@ -138,7 +156,7 @@ public class pickUp : MonoBehaviour
 
             if (toPlaceCampfireBlueprint)
             {
-                campBlueprint.transform.position = new Vector3(hitForCampBlueprint.point.x, 0, hitForCampBlueprint.point.z);
+                campBlueprint.transform.position = new Vector3(hitForCampBlueprint.point.x, 3.2f, hitForCampBlueprint.point.z);
                 campBlueprint.transform.rotation = Quaternion.identity;
             }
 

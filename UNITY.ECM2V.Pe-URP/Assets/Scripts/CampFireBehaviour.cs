@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CampFireBehaviour : MonoBehaviour
@@ -15,31 +16,37 @@ public class CampFireBehaviour : MonoBehaviour
     public AudioSource campFireSound;
     public AudioSource placeWoodSoound;
 
+    public Dialogues dialogueScript;
+    
+
     bool toSpread = false;
 
     void Start()
     {
         smokePart = groupOfParticles.transform.GetChild(0).GetComponent<ParticleSystem>();
-        orangePart = groupOfParticles.transform.GetChild(1).GetComponent<ParticleSystem>();       
+        orangePart = groupOfParticles.transform.GetChild(1).GetComponent<ParticleSystem>();
+
+        dialogueScript = GameObject.Find("Player").GetComponent<Dialogues>();
     }
 
     void Update()
     {
-       if(Input.GetKeyDown(KeyCode.R))
-       {
+        if (amountOfLogs >= 3)
+        {
             toSpread = true;
-       }
+            dialogueScript.Burning();
+        }
 
        if (toSpread)
         {
             ParticleSystem.ShapeModule smokeShape = smokePart.shape;
-            smokeShape.radius += 0.02f;
+            smokeShape.radius += 0.015f;
 
             ParticleSystem.ShapeModule orangeShape = orangePart.shape;
-            orangeShape.radius += 0.02f;
+            orangeShape.radius += 0.015f;
 
-            ModifyRateOverTime(smokePart, smokeShape.radius / 0.8f);
-            ModifyRateOverTime(orangePart, orangeShape.radius / 0.8f);
+            ModifyRateOverTime(smokePart, smokeShape.radius / 0.4f);
+            ModifyRateOverTime(orangePart, orangeShape.radius / 0.4f);
         }
     }
 
