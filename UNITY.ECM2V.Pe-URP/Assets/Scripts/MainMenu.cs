@@ -7,18 +7,20 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] AudioSource mainMenuSong;
 
-    void Awake()
+    void Start()
     {
-        //mainMenuSong. = true; 
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
+
     public void Play()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void Options()
     {
-        SceneManager.LoadScene("Options");
+        SceneManager.LoadScene("Controls");
     }
 
     public void Quit()  
